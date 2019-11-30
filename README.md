@@ -1,5 +1,8 @@
 # BERT
 
+
+
+
 **\*\*\*\*\* New May 31st, 2019: Whole Word Masking Models \*\*\*\*\***
 
 This is a release of several new models which were the result of an improvement
