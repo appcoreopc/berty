@@ -16,6 +16,7 @@ Gotto Colab then
 
 This example is using Microsoft MRPC to classify whether a sentence is a paraphrase or not. You can have a look at the inpuut from : msr_paraphrase_train.txt
 
+Next run the script.
 
 !python berty/run_classifier.py \
   --task_name=MRPC \
@@ -33,10 +34,14 @@ This example is using Microsoft MRPC to classify whether a sentence is a paraphr
 
 
 
+Or you can have a look at collab. 
+
+https://colab.research.google.com/drive/1AxE9iREPz5hNbp8HGgnjB9hUmFc53zKb#scrollTo=yMWV0Pzk7Eqi
+
+
+
+
 # BERT
-
-
-
 
 **\*\*\*\*\* New May 31st, 2019: Whole Word Masking Models \*\*\*\*\***
 
