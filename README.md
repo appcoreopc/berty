@@ -13,6 +13,10 @@ Gotto Colab then
 !export BERT_BASE_DIR=$(pwd)/uncased_L-12_H-768_A-12/
 !export GLUE_DIR=$(pwd)/glue_data
 
+
+This example is using Microsoft MRPC to classify whether a sentence is a paraphrase or not. You can have a look at the inpuut from : msr_paraphrase_train.txt
+
+
 !python berty/run_classifier.py \
   --task_name=MRPC \
   --do_train=true \
