@@ -39,7 +39,9 @@ Or you can have a look at collab.
 
 https://colab.research.google.com/drive/1AxE9iREPz5hNbp8HGgnjB9hUmFc53zKb#scrollTo=yMWV0Pzk7Eqi
 
+For Squad setup, you can have a look at 
 
+https://colab.research.google.com/drive/1zqNaIVIbOnc8DpLP65euSfxilSj4txq9#scrollTo=3sFr77yHIlfL
 
 
 # BERT
