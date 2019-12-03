@@ -11,6 +11,7 @@ Gotto Colab then
 !unzip uncased_L-12_H-768_A-12.zip
 
 !export BERT_BASE_DIR=$(pwd)/uncased_L-12_H-768_A-12/
+
 !export GLUE_DIR=$(pwd)/glue_data
 
 
