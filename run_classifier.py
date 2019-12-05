@@ -783,6 +783,7 @@ def convert_examples_to_features(examples, label_list, max_seq_length,
 
 
 def main(_):
+
   tf.logging.set_verbosity(tf.logging.INFO)
 
   processors = {
@@ -815,8 +816,11 @@ def main(_):
     raise ValueError("Task not found: %s" % (task_name))
 
   processor = processors[task_name]()
-
+   
   label_list = processor.get_labels()
+
+  tf.logging.info("label_list")
+  tf.logging.info(label_list)
 
   tokenizer = tokenization.FullTokenizer(
       vocab_file=FLAGS.vocab_file, do_lower_case=FLAGS.do_lower_case)
@@ -836,6 +840,10 @@ def main(_):
           iterations_per_loop=FLAGS.iterations_per_loop,
           num_shards=FLAGS.num_tpu_cores,
           per_host_input_for_training=is_per_host))
+
+  tf.logging.info("run config")
+  tf.logging.info(run_config)
+
 
   train_examples = None
   num_train_steps = None
@@ -950,6 +958,10 @@ def main(_):
     tf.logging.info("  Batch size = %d", FLAGS.predict_batch_size)
 
     predict_drop_remainder = True if FLAGS.use_tpu else False
+
+    tf.logging.info(".....predict file input.....")
+    tf.logging.info(predict_file)
+
     predict_input_fn = file_based_input_fn_builder(
         input_file=predict_file,
         seq_length=FLAGS.max_seq_length,
@@ -957,6 +969,9 @@ def main(_):
         drop_remainder=predict_drop_remainder)
 
     result = estimator.predict(input_fn=predict_input_fn)
+    
+    tf.logging.info("@@@@@@@@@result@@@@@@@@")
+    tf.logging.info(result)
 
 
     tf.logging.info("Providing more information about the prediction results")

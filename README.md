@@ -1,5 +1,7 @@
 
 
+
+
 Gotto Colab then 
 
 !git clone https://github.com/appcoreopc/berty.git
@@ -37,7 +39,12 @@ Next run the script.
 
 Or you can have a look at collab. 
 
-https://colab.research.google.com/drive/1AxE9iREPz5hNbp8HGgnjB9hUmFc53zKb#scrollTo=yMWV0Pzk7Eqi
+https://colab.research.google.com/drive/1W-d7MCahUggrDrNnLBUz00mKxemuZHwj#scrollTo=vPM3M7uumxWO
+
+You need to run this a couple of times. With the generated results, you might need to sum it up and try to divide to get overall probability that a result is accurate.
+
+
+
 
 For Squad setup, you can have a look at 
 
