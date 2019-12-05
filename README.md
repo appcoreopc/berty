@@ -4,10 +4,16 @@ Try this :-
 Only uses a single sample 
 
 Use fake answers and maybe also change the index. See predicton 
-Use correct answer and then correct question, see prediction. Does this has more to do with question understanding? 
 
 
-Use the same prediction for training purposes
+
+Next, try changing to it to use correct  answer.
+See prediction. 
+
+Does this has more to do with question understanding? 
+
+We can also include the Use the same prediction data for training purposes
+
 
 
 
