@@ -260,6 +260,7 @@ class MnliProcessor(DataProcessor):
     return self._create_examples(
         self._read_tsv(os.path.join(data_dir, "train.tsv")), "train")
 
+  ## do eval
   def get_dev_examples(self, data_dir):
     """See base class."""
     return self._create_examples(
@@ -296,6 +297,7 @@ class MnliProcessor(DataProcessor):
 class MrpcProcessor(DataProcessor):
   """Processor for the MRPC data set (GLUE version)."""
 
+  ## train 
   def get_train_examples(self, data_dir):
     """See base class."""
     return self._create_examples(
@@ -305,7 +307,7 @@ class MrpcProcessor(DataProcessor):
     """See base class."""
     return self._create_examples(
         self._read_tsv(os.path.join(data_dir, "dev.tsv")), "dev")
-
+  ## predict 
   def get_test_examples(self, data_dir):
     """See base class."""
     return self._create_examples(
@@ -956,11 +958,20 @@ def main(_):
 
     result = estimator.predict(input_fn=predict_input_fn)
 
+
+    tf.logging.info("Providing more information about the prediction results")
+    
+    tf.logging.info(type(result))
+    tf.logging.info(dir(result))
+    
     output_predict_file = os.path.join(FLAGS.output_dir, "test_results.tsv")
     with tf.gfile.GFile(output_predict_file, "w") as writer:
       num_written_lines = 0
       tf.logging.info("***** Predict results *****")
       for (i, prediction) in enumerate(result):
+        tf.logging.info("prediction-object")
+        tf.logging.info(prediction)
+        
         probabilities = prediction["probabilities"]
         if i >= num_actual_predict_examples:
           break
