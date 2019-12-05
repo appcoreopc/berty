@@ -15,8 +15,9 @@ Does this has more to do with question understanding?
 We can also include the Use the same prediction data for training purposes
 
 
+A notebook on BERT SQUAD 
 
-
+https://colab.research.google.com/drive/1zqNaIVIbOnc8DpLP65euSfxilSj4txq9#scrollTo=O-ieRmhEyl8T --
 
 
 
