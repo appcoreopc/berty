@@ -946,10 +946,18 @@ def main(_):
       while len(predict_examples) % FLAGS.predict_batch_size != 0:
         predict_examples.append(PaddingInputExample())
 
+    
+    tf.logging.info("*****predict_examples*****")
+    tf.logging.info(predict_examples)
+
     predict_file = os.path.join(FLAGS.output_dir, "predict.tf_record")
     file_based_convert_examples_to_features(predict_examples, label_list,
                                             FLAGS.max_seq_length, tokenizer,
                                             predict_file)
+
+
+    tf.logging.info("*****file_based_convert_examples_to_features*****")
+    tf.logging.info(file_based_convert_examples_to_features)
 
     tf.logging.info("***** Running prediction*****")
     tf.logging.info("  Num examples = %d (%d actual, %d padding)",
