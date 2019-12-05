@@ -5,6 +5,7 @@ Only uses a single sample
 
 Use fake answers and maybe also change the index. See predicton 
 
+https://arxiv.org/abs/1909.11942
 
 
 Next, try changing to it to use correct  answer.
