@@ -24,11 +24,13 @@ Does this has more to do with question understanding?
 We can also include the Use the same prediction data for training purposes
 
 
-A notebook on BERT SQUAD 
+A notebook on BERT SQUAD 1.1
 
 https://colab.research.google.com/drive/1zqNaIVIbOnc8DpLP65euSfxilSj4txq9#scrollTo=O-ieRmhEyl8T --
 
+A notebook on BERT SQUAD 2.0
 
+https://colab.research.google.com/drive/12txA3lDy991JQrTl7irBsMFcbblA_mtV#scrollTo=EzzwG1Zf6n2m
 
 Gotto Colab then 
 
