@@ -1063,7 +1063,7 @@ class FeatureWriter(object):
     self.filename = filename
     self.is_training = is_training
     self.num_features = 0
-    self._writer = tf.python_io.TFRecordWriter(filename)
+    self._writer = tf.io.TFRecordWriter(filename)
 
   def process_feature(self, feature):
     """Write a InputFeature to the TFRecordWriter as a tf.train.Example."""
